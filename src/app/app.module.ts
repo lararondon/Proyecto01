@@ -6,6 +6,7 @@ import { EmmetComponent } from './emmet/emmet.component';
 import { QueenComponent } from './queen/queen.component';
 import { FuncionComponent } from './funcion/funcion.component';
 import { OnewayComponent } from './oneway/oneway.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,11 @@ import { OnewayComponent } from './oneway/oneway.component';
     EmmetComponent,
     QueenComponent,
     FuncionComponent,
-    OnewayComponent
+    OnewayComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

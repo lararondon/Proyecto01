@@ -7,11 +7,9 @@ import { Component } from '@angular/core';
 })
 export class OnewayComponent {
   v_interpolacion="Ejemplo de interpolación"
-  valor_parrafo:boolean=false;
-  valor_final="Pulsame"
+  texto: string=""
   
-  estado(){
-    this.valor_parrafo = !this.valor_parrafo
-    this.valor_final=this.valor_parrafo ? "Adiós":"Hola"
+  cambiar(){
+    this.texto="Usando one way binding"
   }
 }
